@@ -10,13 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 exports.CLIENTS = [
-    { name: 'clientsuccess', img: 'assets/logo_clientsuccess.png', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
-    { name: 'clientsuccess', img: '', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
-    { name: 'clientsuccess', img: '', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
-    { name: 'clientsuccess', img: '', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
-    { name: 'clientsuccess', img: '', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
-    { name: 'clientsuccess', img: '', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
-    { name: 'clientsuccess', img: '', color: 'red', url: '', content: 'The man in the hill bro', viewMore: 'false' },
+    { name: 'clientsuccess', img: 'logo_clientsuccess',
+        color: '#22A5DE', url: '', viewMore: 'false',
+        content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+    },
+    { name: 'simplecitizen', img: 'logo_clientsuccess',
+        color: '#246D5A', url: '', viewMore: 'false',
+        content: 'Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.'
+    },
 ];
 var DataService = (function () {
     function DataService() {

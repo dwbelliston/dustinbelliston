@@ -19,6 +19,14 @@ var ClientsComponent = (function () {
     };
     ClientsComponent.prototype.ngAfterContentInit = function () {
     };
+    ClientsComponent.prototype.randomTranslate = function () {
+        var x, xDir, y, yDir;
+        x = Math.random() < 0.5 ? '0%' : '100%';
+        y = x === "0%" ? "100%" : Math.random() < 0.5 ? '0%' : '100%';
+        xDir = Math.random() < 0.5 ? '-' : '';
+        yDir = Math.random() < 0.5 ? '-' : '';
+        return "translate(" + (xDir + x) + ", " + (yDir + y) + ")";
+    };
     ClientsComponent = __decorate([
         core_1.Component({
             selector: 'clients',

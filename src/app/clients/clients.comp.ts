@@ -20,4 +20,16 @@ export class ClientsComponent implements OnInit {
 
     ngAfterContentInit () {
     }
+
+    randomTranslate() {
+        let x:string, xDir:string, y:string, yDir:string;
+
+        x = Math.random() < 0.5 ? '0%' : '100%';
+        y = x === `0%` ? `100%` : Math.random() < 0.5 ? '0%' : '100%';
+
+        xDir = Math.random() < 0.5 ? '-' : '';
+        yDir = Math.random() < 0.5 ? '-' : '';
+
+        return `translate(${xDir + x}, ${yDir + y})`;
+    }
 }
