@@ -60,7 +60,9 @@ $cardPadding: 25px;
  .card {
    position: relative;
    height: 300px;
+   min-height: 300px;
    width: 300px;
+   min-width: 300px;
    background: rgba(223,223,223,0.39);
    box-shadow: 0px 5px 10px 0px rgba(206,206,206,0.50);
    margin: 25px;
@@ -87,9 +89,14 @@ $cardPadding: 25px;
    &:hover > &__overlay {
      transform: translate(0%, 0%) !important;
    }
-   
+   &:hover  &__content {
+     opacity: 1;
+   }
+
    &__content {
+     transition: opacity 1500ms;
      color: white;
+     opacity: 0;
    }
  }
 
