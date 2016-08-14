@@ -1,0 +1,47 @@
+@import "defaults";
+@import "functions";
+@import "colors";
+@import "mixins";
+
+.landing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__hero {
+  }
+  &__squares {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+.hero {
+  @include font-range(50, 150);
+  color: color(primary);
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.square {
+  height: 5px;
+  width: 5px;
+  background: color(lgray);
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.subheader {
+  @include font-range(10, 25);
+  color: color(lgray);
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+}
+
+//Last Line
+@import "responsive";

@@ -1,0 +1,38 @@
+//Responsive Typography
+@mixin font-range($min-size, $max-size, $min-width: 320, $max-width: 1440) {
+  $min-size-rem: rem-calc($min-size);
+  $max-size-rem: rem-calc($max-size);
+  $min-width-rem: rem-calc($min-width);
+  $max-width-rem: rem-calc($max-width);
+
+  font-size: calc(#{$min-size-rem} + (#{$max-size} - #{$min-size}) * (100vw - #{$min-width-rem}) / (#{$max-width} - #{$min-width}));
+
+  @include breakpoint($min-width down) {
+    font-size: #{$min-size-rem};
+  }
+  @include breakpoint($max-width) {
+    font-size: #{$max-size-rem};
+  }
+}
+
+//"Responsive" background images
+//Takes in path to the image, and the image extension separately
+@mixin responsive-background($path, $ext) {
+  $at1x_path: "#{$path}.#{$ext}";
+  $at2x_path: "#{$path}@2x.#{$ext}";
+  $at3x_path: "#{$path}@3x.#{$ext}";
+
+  background-image: url("#{$at1x_path}");
+
+  @media screen and (-webkit-min-device-pixel-ratio : 2),
+  screen and (min-resolution: 2dppx),
+  screen and (min-resolution: 192dpi) {
+    background-image: url("#{$at2x_path}");
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio : 3),
+  screen and (min-resolution: 3dppx),
+  screen and (min-resolution: 288dpi) {
+    background-image: url("#{$at3x_path}");
+  }
+}
