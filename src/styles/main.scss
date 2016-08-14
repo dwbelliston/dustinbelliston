@@ -17,14 +17,6 @@
     padding-bottom: 20px;
   }
 }
-.hero {
-  @include font-range(50, 150);
-  color: color(primary);
-  text-align: center;
-  font-weight: 400;
-  margin: 0;
-}
-
 .square {
   height: 5px;
   width: 5px;
@@ -34,14 +26,40 @@
     margin-left: 10px;
   }
 }
-
-.subheader {
+.hero {
+  @include font-range(50, 150);
+  color: color(primary);
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+.sectiontitle {
+  @include font-range(25, 50);
+  color: color(accent);
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+}.subheader {
   @include font-range(10, 25);
   color: color(lgray);
   text-align: center;
   font-weight: 300;
   margin: 0;
 }
+
+ .cards {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   padding: 25px;
+ }
+ .card {
+   height: 300px;
+   width: 300px;
+   background: rgba(223,223,223,0.39);
+   box-shadow: 0px 5px 10px 0px rgba(206,206,206,0.50);
+   margin: 25px;
+ }
 
 //Last Line
 @import "responsive";

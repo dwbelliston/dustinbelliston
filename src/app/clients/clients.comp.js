@@ -9,25 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
-var landing_comp_1 = require('./landing/landing.comp');
-var clients_comp_1 = require('./clients/clients.comp');
-var data_service_1 = require('./shared/data.service');
-var AppComponent = (function () {
-    function AppComponent() {
+var data_service_1 = require('../shared/data.service');
+var ClientsComponent = (function () {
+    function ClientsComponent(dataService) {
+        this.dataService = dataService;
     }
-    AppComponent = __decorate([
+    ClientsComponent.prototype.ngOnInit = function () {
+        this.clients = this.dataService.getClients();
+    };
+    ClientsComponent.prototype.ngAfterContentInit = function () {
+    };
+    ClientsComponent = __decorate([
         core_1.Component({
-            selector: 'app-comp',
-            template: require('./app.comp.html'),
-            styles: [require('../styles/main.scss'), require('./app.comp.scss')],
+            selector: 'clients',
+            template: require('./clients.comp.html'),
+            styles: [require('./clients.comp.scss'), require('../../styles/main.scss')],
             providers: [data_service_1.DataService],
-            directives: [landing_comp_1.LandingComponent, clients_comp_1.ClientsComponent],
-            encapsulation: core_2.ViewEncapsulation.None,
         }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+        __metadata('design:paramtypes', [data_service_1.DataService])
+    ], ClientsComponent);
+    return ClientsComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ClientsComponent = ClientsComponent;
+//# sourceMappingURL=clients.comp.js.map
