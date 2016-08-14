@@ -6,7 +6,3 @@ node_modules/
 .sass-cache/
 typings/
 .idea/
-stg/
-bin/
-tsBuild/
-build/
