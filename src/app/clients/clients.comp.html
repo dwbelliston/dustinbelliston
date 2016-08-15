@@ -1,15 +1,5 @@
 <h3 class="subheader">clients</h3>
 
 <div class="cards">
-    <div *ngFor="let client of clients" class="card">
-        <div class="card__image">
-            <img class="" src="../../assets/logo_clientsuccess.png" alt="{{client.name}}">
-        </div>
-        <div class="card__overlay" [style.background]="client.color" [style.transform]="randomTranslate()">
-            <div class="card__content">
-                <p>{{client.content}}</p>
-            </div>
-
-        </div>
-    </div>
+    <card *ngFor="let client of clients" [data]="client"></card>
 </div>

@@ -9,9 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var core_2 = require('@angular/core');
 var landing_comp_1 = require('./landing/landing.comp');
 var clients_comp_1 = require('./clients/clients.comp');
+var card_comp_1 = require('./shared/card/card.comp');
 var data_service_1 = require('./shared/data.service');
 var AppComponent = (function () {
     function AppComponent() {
@@ -22,8 +22,8 @@ var AppComponent = (function () {
             template: require('./app.comp.html'),
             styles: [require('../styles/main.scss'), require('./app.comp.scss')],
             providers: [data_service_1.DataService],
-            directives: [landing_comp_1.LandingComponent, clients_comp_1.ClientsComponent],
-            encapsulation: core_2.ViewEncapsulation.None,
+            directives: [landing_comp_1.LandingComponent, clients_comp_1.ClientsComponent, card_comp_1.CardComponent],
+            encapsulation: core_1.ViewEncapsulation.None,
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

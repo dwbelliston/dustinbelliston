@@ -17,21 +17,12 @@ var ClientsComponent = (function () {
     ClientsComponent.prototype.ngOnInit = function () {
         this.clients = this.dataService.getClients();
     };
-    ClientsComponent.prototype.ngAfterContentInit = function () {
-    };
-    ClientsComponent.prototype.randomTranslate = function () {
-        var x, xDir, y, yDir;
-        x = Math.random() < 0.5 ? '0%' : '100%';
-        y = x === "0%" ? "100%" : Math.random() < 0.5 ? '0%' : '100%';
-        xDir = Math.random() < 0.5 ? '-' : '';
-        yDir = Math.random() < 0.5 ? '-' : '';
-        return "translate(" + (xDir + x) + ", " + (yDir + y) + ")";
-    };
     ClientsComponent = __decorate([
         core_1.Component({
             selector: 'clients',
             template: require('./clients.comp.html'),
             styles: [require('./clients.comp.scss'), require('../../styles/main.scss')],
+            directives: [],
             providers: [data_service_1.DataService],
         }), 
         __metadata('design:paramtypes', [data_service_1.DataService])

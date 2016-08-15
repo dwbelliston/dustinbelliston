@@ -49,56 +49,54 @@
 
 
  //Card----------------------------
-$cardPadding: 25px;
+.cards {
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ padding: $cardPadding;
+}
+.card {
+  position: relative;
+  height: 300px;
+  min-height: 300px;
+  width: 300px;
+  min-width: 300px;
+  background: rgba(223,223,223,0.39);
+  box-shadow: 0px 5px 10px 0px rgba(206,206,206,0.50);
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
- .cards {
-   display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   padding: $cardPadding;
- }
- .card {
-   position: relative;
-   height: 300px;
-   min-height: 300px;
-   width: 300px;
-   min-width: 300px;
-   background: rgba(223,223,223,0.39);
-   box-shadow: 0px 5px 10px 0px rgba(206,206,206,0.50);
-   margin: 25px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
+  &__image {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+  }
 
-   &__image {
-     display: flex;
-     align-items: center;
-     height: 200px;
-     width: 200px;
-   }
+  &__overlay {
+    position: absolute;
+    padding: $cardPadding;
+    height: 100%;
+    width: 100%;
+    transition: all 200ms;
+  }
 
-   &__overlay {
-     position: absolute;
-     padding: $cardPadding;
-     height: 100%;
-     width: 100%;
-     transition: all 200ms;
-   }
+  &:hover > &__overlay {
+    transform: translate(0%, 0%) !important;
+  }
+  &:hover  &__content {
+    opacity: 1;
+  }
 
-   &:hover > &__overlay {
-     transform: translate(0%, 0%) !important;
-   }
-   &:hover  &__content {
-     opacity: 1;
-   }
-
-   &__content {
-     transition: opacity 1500ms;
-     color: white;
-     opacity: 0;
-   }
- }
+  &__content {
+    transition: opacity 1500ms;
+    color: white;
+    opacity: 0;
+  }
+}
 
 //Last Line
 @import "responsive";
