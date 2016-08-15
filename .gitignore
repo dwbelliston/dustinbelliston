@@ -6,3 +6,8 @@ node_modules/
 .sass-cache/
 typings/
 .idea/
+
+build
+.tmp
+src/**/*.map
+src/**/*.js

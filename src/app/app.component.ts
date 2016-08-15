@@ -16,7 +16,4 @@ import { DataService } from './shared/data.service'
 })
 export class AppComponent {
   constructor() {}
-
-
-
 }
