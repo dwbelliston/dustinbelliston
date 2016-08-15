@@ -25,8 +25,12 @@ module.exports = {
         loader: 'html'
       },
       {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+        test: /\.(woff|woff2|ttf|eot|ico)$/,
         loader: 'file?name=assets/[name].[hash].[ext]'
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'file?name=assets/[name].[ext]'
       },
       {
         test: /\.css$/,

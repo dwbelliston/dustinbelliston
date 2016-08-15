@@ -13,10 +13,10 @@ var CardComponent = (function () {
     function CardComponent() {
     }
     CardComponent.prototype.ngOnInit = function () {
+        this.imageSrc = require("../../../assets/" + this.data.img + ".png");
         this.translateStyle = this.randomTranslate();
     };
     CardComponent.prototype.ngAfterContentInit = function () {
-        console.log('Hey');
     };
     CardComponent.prototype.randomTranslate = function () {
         var x, xDir, y, yDir;

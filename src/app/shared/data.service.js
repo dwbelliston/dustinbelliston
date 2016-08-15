@@ -14,7 +14,7 @@ exports.CLIENTS = [
         color: '#22A5DE', url: '', viewMore: 'false',
         content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
     },
-    { name: 'simplecitizen', img: 'logo_clientsuccess',
+    { name: 'simplecitizen', img: 'logo_simplecitizen',
         color: 'red', url: '', viewMore: 'false',
         content: 'Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.'
     },

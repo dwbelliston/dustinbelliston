@@ -8,18 +8,19 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
-  @Input() data: {};
+  @Input() data: any;
   private translateStyle: string;
+  private imageSrc: string;
 
   constructor(){
   }
 
   ngOnInit () {
+    this.imageSrc = require(`../../../assets/${this.data.img}.png`);
     this.translateStyle = this.randomTranslate();
   }
 
   ngAfterContentInit () {
-    console.log('Hey')
   }
 
   randomTranslate() {
