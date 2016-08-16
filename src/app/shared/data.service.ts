@@ -68,7 +68,7 @@ export const TECH = [
 
 export const EDUCATION = [
   {name: 'byu', img: 'education/byu',
-    color: '#1ebaff', url: '', viewMore: false,
+    color: '#01275D', url: '', viewMore: false,
     content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
   },
   {name: 'front-end development', img: false,
@@ -93,6 +93,36 @@ export const EDUCATION = [
   },
 ];
 
+export const EMPLOYERS = [
+  {name: 'izeni', img: 'employer/izeni',
+    color: 'black', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+  {name: 'fidelity', img: 'employer/fidelity',
+    color: '#398D00', url: '', viewMore: false,
+    content: 'Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.'
+  },
+  {name: 'byu', img: 'employer/byumain',
+    color: '#01275D', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+];
+
+export const ABOUTME = [
+  {name: 'family', img: 'aboutme/family',
+    color: '#002B39', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+  {name: 'bike', img: 'aboutme/bike',
+    color: '#96BFF2', url: '', viewMore: false,
+    content: 'Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.'
+  },
+  {name: 'learning', img: 'aboutme/learning',
+    color: '#C53B34', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+];
+
 
 @Injectable()
 export class DataService {
@@ -107,5 +137,11 @@ export class DataService {
   }
   getEducation() {
     return EDUCATION;
+  }
+  getEmployers() {
+    return EMPLOYERS;
+  }
+  getAboutme() {
+    return ABOUTME;
   }
 }
