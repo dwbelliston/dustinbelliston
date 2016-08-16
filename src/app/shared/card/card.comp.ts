@@ -10,13 +10,13 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() data: any;
   private translateStyle: string;
-  private imageSrc: string;
 
   constructor(){
   }
 
   ngOnInit () {
-    this.imageSrc = require(`../../../assets/${this.data.img}.png`);
+    // private imageSrc: string;
+    // this.imageSrc = require(`../../../assets/${this.data.img}.png`);
     this.translateStyle = this.randomTranslate();
   }
 

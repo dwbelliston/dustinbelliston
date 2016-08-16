@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
-        loader: 'file?name=assets/[name].[ext]'
+        loader: 'file?name=assets/[name].[hash.[ext]'
       },
       {
         test: /\.css$/,
