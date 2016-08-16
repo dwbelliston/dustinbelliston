@@ -1,7 +1,13 @@
 <div class="card">
-  <div class="card__image">
+
+  <div class="card__front" *ngIf="data.img">
     <img class="" [src]="imageSrc" alt="{{data.name}}">
   </div>
+
+  <div class="card__front card__front--text" *ngIf="!data.img" [style.color]="data.color">
+    <span>{{data.name}}</span>
+  </div>
+
   <div class="card__overlay" [style.background]="data.color" [style.transform]="translateStyle">
     <div class="card__content">
       <p>{{data.content}}</p>

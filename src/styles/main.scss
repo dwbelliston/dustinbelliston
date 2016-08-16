@@ -69,11 +69,18 @@
   justify-content: center;
   overflow: hidden;
 
-  &__image {
+  &__front {
     display: flex;
     align-items: center;
     height: 200px;
     width: 200px;
+
+    &--text {
+      justify-content: center;
+      text-align: center;
+      font-size: 40px;
+      //font-weight: 300;
+    }
   }
 
   &__overlay {

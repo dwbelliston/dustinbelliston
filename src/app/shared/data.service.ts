@@ -66,6 +66,33 @@ export const TECH = [
   },
 ];
 
+export const EDUCATION = [
+  {name: 'byu', img: 'education/byu',
+    color: '#1ebaff', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+  {name: 'front-end development', img: false,
+    color: '#246d5a', url: '', viewMore: false,
+    content: 'Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.'
+  },
+  {name: 'back-end development', img: false,
+    color: '#00BBC6', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+  {name: 'systems admin', img: false,
+    color: '#F7AE35', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+  {name: 'business management', img: false,
+    color: '#1D7BCB', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+  {name: 'security', img: false,
+    color: '#145284', url: '', viewMore: false,
+    content: 'Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.'
+  },
+];
+
 
 @Injectable()
 export class DataService {
@@ -77,5 +104,8 @@ export class DataService {
   }
   getTech() {
     return TECH;
+  }
+  getEducation() {
+    return EDUCATION;
   }
 }

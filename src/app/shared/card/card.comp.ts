@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit () {
-    this.imageSrc = require(`../../../assets/${this.data.img}.png`);
+    if (this.data.img) this.imageSrc = require(`../../../assets/${this.data.img}.png`);
     this.translateStyle = this.randomTranslate();
   }
 
