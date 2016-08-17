@@ -3,11 +3,11 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/dustinbelliston
-#hooks:
-#  BeforeInstall:
-#    - location: scripts/install_dependencies.sh
-#      timeout: 3000
-#      runas: root
+hooks:
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 3000
+      runas: root
 #    - location: scripts/start_server.sh
 #      timeout: 300
 #      runas: root
