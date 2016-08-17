@@ -6,3 +6,4 @@ yum -y install codedeploy-agent.noarch.rpm
 sudo curl --silent --location https://rpm.nodesource.com/setup_4.x | sudo bash -
 sudo yum -y install nodejs
 npm install typings --global
+sudo npm install -g firebase-tools
