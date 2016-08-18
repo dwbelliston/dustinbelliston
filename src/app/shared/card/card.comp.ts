@@ -35,7 +35,6 @@ export class CardComponent implements OnInit {
   onScroll(e: any) {
     let elm = document.getElementById(this.cardId);
     let triggerStep = window.innerHeight - window.innerHeight/4;
-    console.log(elm.getBoundingClientRect().top);
     if(elm.getBoundingClientRect().top > triggerStep) {
       elm.style.opacity = '0';
     } else {

@@ -1,1 +1,14 @@
-<!DOCTYPE html> <html> <head> <title>dwb</title> <meta charset=UTF-8> <meta name=viewport content="width=device-width,initial-scale=1"> <base href=/ > <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel=stylesheet> <link rel=stylesheet href=""> </head> <body class=container> <app-comp></app-comp> <noscript>Enable JavaScript to view this web page.</noscript> <script type="text/javascript" src="/polyfills.79bf42328bf58e1edc80.js"></script><script type="text/javascript" src="/vendor.79bf42328bf58e1edc80.js"></script><script type="text/javascript" src="/app.79bf42328bf58e1edc80.js"></script></body> </html>
+<!DOCTYPE html> <html> <head> <title>dwb</title> <meta charset=UTF-8> <meta name=viewport content="width=device-width,initial-scale=1"> <base href=/ > <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel=stylesheet> <link rel=stylesheet href=""> </head> <div class=loadingEnter id=loadingEnter></div> <body> <app-comp id=appWrap></app-comp> <script>console.log('First')
+    document.addEventListener("DOMContentLoaded", function(event) {
+      console.log('DOM Loaded');
+
+      setTimeout(function() {
+        console.log('Hitme');
+
+        let element = document.getElementById("loadingEnter");
+//        element.parentNode.removeChild(element);
+
+        document.getElementById("appWrap").style.display = 'block';
+      }, 3000);
+
+    })</script> <noscript>Enable JavaScript to view this web page.</noscript> <script type="text/javascript" src="/polyfills.f560807e6d7a103e28ee.js"></script><script type="text/javascript" src="/vendor.f560807e6d7a103e28ee.js"></script><script type="text/javascript" src="/app.f560807e6d7a103e28ee.js"></script></body> </html>

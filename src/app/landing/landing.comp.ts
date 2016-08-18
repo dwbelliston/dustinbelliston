@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Renderer } from '@angular/core';
 
 
 @Component({
@@ -9,7 +8,7 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-    constructor(){
+    constructor(private renderer : Renderer){
     }
 
     ngOnInit () {
@@ -19,6 +18,24 @@ export class LandingComponent implements OnInit {
     ngAfterContentInit () {
     }
 
+    ngAfterViewInit () {
+        this.renderer.listenGlobal( 'window' , 'scroll' , (e : any) => {
+            this.onScroll(e);
+        });
+    }
+
+    onScroll(e: any) {
+        let elmLanding = document.getElementById('landing');
+        let landingMidway = elmLanding.offsetHeight/2;
+
+        let elmNav = document.getElementById('nav');
+
+        if(elmLanding.getBoundingClientRect().bottom < landingMidway) {
+            elmNav.style.opacity = '1';
+        } else {
+            elmNav.style.opacity = '0';
+        }
+    }
 
 
 }
