@@ -41,7 +41,7 @@
   margin: 0;
   padding: $cardPadding;
 }.subheader {
-  @include font-range(10, 25);
+  @include font-range(20, 25);
   color: color(lgray);
   text-align: center;
   font-weight: 300;
@@ -69,6 +69,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 
   &__front {
     display: flex;
