@@ -36,11 +36,10 @@
 
 <body id="body">
 
-  <app-comp id="appWrap"></app-comp>
+  <app-comp></app-comp>
 
   <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-      document.getElementById("appWrap").style.display = 'block';
       let element = document.getElementById("loadingEnter");
       element.parentNode.removeChild(element);
     });
