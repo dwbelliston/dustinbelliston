@@ -10,8 +10,15 @@
 
   <div class="card__overlay" [style.background]="data.color" [style.transform]="translateStyle">
     <div class="card__content">
-      <h3>{{data.name}}</h3>
+      <h3>
+        <a *ngIf="data.url" [href]="data.url" target="_blank">{{data.name}}</a>
+        <span *ngIf="!data.url">{{data.name}}</span>
+      </h3>
       <p>{{data.content}}</p>
+    </div>
+    <div *ngIf="data.viewMore" class="card__viewmore">
+      <img class="" src="../../../assets/glasses.png" alt="View More">
+      <!--<p>View Details</p>-->
     </div>
   </div>
 </div>
