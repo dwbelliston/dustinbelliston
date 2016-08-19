@@ -36,9 +36,11 @@
   transition: opacity 500ms;
 }
 .square {
-  height: 5px;
-  width: 5px;
+  height: 10px;
+  width: 10px;
   background: color(lgray);
+  transition: background 1000ms;
+
 
   & + & {
     margin-left: 10px;
@@ -50,7 +52,7 @@
   text-align: center;
   font-weight: 400;
   margin: 0;
-  transition: color 500ms;
+  transition: color 2000ms;
 }
 .sectiontitle {
   @include font-range(25, 50);
@@ -64,7 +66,7 @@
   color: color(lgray);
   text-align: center;
   font-weight: 400;
-  margin: 50px 0;
+  margin: 25px 0;
 }
 
 

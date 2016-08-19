@@ -10,6 +10,9 @@ import { RandomColorService } from '../shared/random-color.service'
 })
 export class LandingComponent implements OnInit {
     private heroElm: any;
+    private s1: any;
+    private s2: any;
+    private s3: any;
 
     constructor(private renderer : Renderer, private randomColor: RandomColorService){
     }
@@ -22,12 +25,19 @@ export class LandingComponent implements OnInit {
 
     ngAfterViewInit () {
         this.heroElm = document.getElementById('mainHero');
+        this.s1 = document.getElementById('s1');
+        this.s2 = document.getElementById('s2');
+        this.s3 = document.getElementById('s3');
+
         this.renderer.listenGlobal( 'window' , 'scroll' , (e : any) => {
             this.onScroll(e);
         });
 
         setInterval(()=>{
-            this.heroElm.style.color = this.randomColor.getRandom();
+            // this.heroElm.style.color = this.randomColor.getRandom();
+            this.s1.style.background = this.randomColor.getRandom();
+            this.s2.style.background = this.randomColor.getRandom();
+            this.s3.style.background = this.randomColor.getRandom();
         }, 1000);
     }
 
