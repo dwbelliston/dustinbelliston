@@ -68,6 +68,10 @@
 
 
  //Card----------------------------
+card {
+  $marginFor3: 2%;
+  margin: 0 $marginFor3;
+}
 .cards {
  display: flex;
  justify-content: space-around;
