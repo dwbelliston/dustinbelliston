@@ -50,6 +50,7 @@
   text-align: center;
   font-weight: 400;
   margin: 0;
+  transition: color 500ms;
 }
 .sectiontitle {
   @include font-range(25, 50);
