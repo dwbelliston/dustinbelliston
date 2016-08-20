@@ -9,18 +9,38 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   &__hero {
   }
+
   &__squares {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
   }
 }
+
+.nav {
+  position: fixed;
+  background: white;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+  color: color(primary);
+  top: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 25px;
+  font-size: 25px;
+  line-height: 50px;
+  z-index: 500;
+  opacity: 0;
+  transition: opacity 500ms;
+}
 .square {
-  height: 5px;
-  width: 5px;
+  height: 10px;
+  width: 10px;
   background: color(lgray);
+  transition: background 1000ms;
+
 
   & + & {
     margin-left: 10px;
@@ -32,24 +52,29 @@
   text-align: center;
   font-weight: 400;
   margin: 0;
+  transition: color 2000ms;
 }
 .sectiontitle {
   @include font-range(25, 50);
   color: color(accent);
   text-align: center;
   font-weight: 300;
-  margin: 0;
   padding: $cardPadding;
-}.subheader {
-  @include font-range(10, 25);
+}
+.subheader {
+  @include font-range(20, 25);
   color: color(lgray);
   text-align: center;
-  font-weight: 300;
-  margin: 0;
+  font-weight: 400;
+  margin: 0px 0;
 }
 
 
  //Card----------------------------
+card {
+  $marginFor3: 2%;
+  margin: 0 $marginFor3;
+}
 .cards {
  display: flex;
  justify-content: space-around;
@@ -69,6 +94,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s;
 
   &__front {
     display: flex;
@@ -90,6 +117,12 @@
     height: 100%;
     width: 100%;
     transition: all 200ms;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
   }
 
   &:hover > &__overlay {
@@ -98,11 +131,29 @@
   &:hover  &__content {
     opacity: 1;
   }
+  &:hover  &__viewmore {
+    opacity: 1;
+    transition: opacity 3000ms;
+  }
 
   &__content {
     transition: opacity 1500ms;
     color: white;
     opacity: 0;
+    overflow: hidden;
+    &:after {
+     content: '';
+      display: block;
+    }
+  }
+  &__viewmore {
+    opacity: 0;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    & p {
+      margin: 0;
+    }
   }
 }
 

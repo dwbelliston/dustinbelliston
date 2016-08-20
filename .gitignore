@@ -7,7 +7,6 @@ node_modules/
 typings/
 .idea/
 
-build
 .tmp
 src/**/*.map
 src/**/*.js

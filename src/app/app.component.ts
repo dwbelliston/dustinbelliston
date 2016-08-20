@@ -9,12 +9,13 @@ import { AboutmeComponent } from './aboutme/aboutme.comp'
 import { CardComponent } from './shared/card/card.comp'
 
 import { DataService } from './shared/data.service'
+import { RandomColorService } from './shared/random-color.service'
 
 @Component({
   selector: 'app-comp',
   template: require('./app.comp.html'),
   styles: [require('../styles/main.scss'), require('./app.comp.scss')],
-  providers: [DataService],
+  providers: [DataService, RandomColorService],
   directives: [LandingComponent, ClientsComponent, EducationComponent,
     AboutmeComponent, EmployersComponent, CardComponent, TechsComponent],
   encapsulation: ViewEncapsulation.None,

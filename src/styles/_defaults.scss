@@ -35,6 +35,8 @@ img { max-width: 100%; }
 a, [ui-sref], [ng-click] {
   cursor: pointer;
   outline: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
