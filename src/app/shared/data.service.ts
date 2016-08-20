@@ -71,7 +71,7 @@ export const TECH = [
 export const EDUCATION = [
   {name: `byu`, img: `education/byu`,
     color: `#01275D`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    content: `Masters of Information Systems Management.`
   },
   {name: `front-end development`, img: false,
     color: `#246d5a`, url: ``, viewMore: false,
