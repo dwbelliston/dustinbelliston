@@ -14,7 +14,12 @@ export class LandingComponent implements OnInit {
     private s2: any;
     private s3: any;
 
+    private timeCheck: number;
+    private timeDelayMS: number;
+
     constructor(private renderer : Renderer, private randomColor: RandomColorService){
+        this.timeCheck = 0;
+        this.timeDelayMS = 1000;
     }
 
     ngOnInit () {
@@ -33,15 +38,14 @@ export class LandingComponent implements OnInit {
             this.onScroll(e);
         });
 
-        setInterval(()=>{
-            // this.heroElm.style.color = this.randomColor.getRandom();
-            this.s1.style.background = this.randomColor.getRandom();
-            this.s2.style.background = this.randomColor.getRandom();
-            this.s3.style.background = this.randomColor.getRandom();
-        }, 1000);
+        requestAnimationFrame(this.catchColorChange.bind(this))
     }
 
     onScroll(e: any) {
+        requestAnimationFrame(this.catchScroll.bind(this))
+    }
+
+    catchScroll () {
         let elmLanding = document.getElementById('landing');
         let landingMidway = elmLanding.offsetHeight/2;
 
@@ -54,5 +58,18 @@ export class LandingComponent implements OnInit {
         }
     }
 
+    catchColorChange(time:any) {
+        let nextTrigger = this.timeCheck + this.timeDelayMS;
 
+        if (time > nextTrigger) {
+            this.timeCheck = time;
+            // this.heroElm.style.color = this.randomColor.getRandom();
+            this.s1.style.background = this.randomColor.getRandom();
+            this.s2.style.background = this.randomColor.getRandom();
+            this.s3.style.background = this.randomColor.getRandom();
+        }
+
+        requestAnimationFrame(this.catchColorChange.bind(this))
+
+    }
 }

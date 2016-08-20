@@ -33,6 +33,10 @@ export class CardComponent implements OnInit {
   }
 
   onScroll(e: any) {
+    requestAnimationFrame(this.catchScroll.bind(this))
+  }
+
+  catchScroll() {
     let elm = document.getElementById(this.cardId);
     let triggerStep = window.innerHeight - window.innerHeight/4;
     if(elm.getBoundingClientRect().top > triggerStep) {
