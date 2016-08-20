@@ -133,11 +133,6 @@ export const COLORS = [
     "rgb": "(28, 211, 162)"
   },
   {
-    "hex": "#FFAACC",
-    "name": "Carnation Pink",
-    "rgb": "(255, 170, 204)"
-  },
-  {
     "hex": "#DD4492",
     "name": "Cerise",
     "rgb": "(221, 68, 146)"
@@ -201,11 +196,6 @@ export const COLORS = [
     "hex": "#6DAE81",
     "name": "Forest Green",
     "rgb": "(109, 174, 129)"
-  },
-  {
-    "hex": "#C364C5",
-    "name": "Fuchsia",
-    "rgb": "(195, 100, 197)"
   },
   {
     "hex": "#CC6666",
@@ -413,44 +403,14 @@ export const COLORS = [
     "rgb": "(197, 208, 230)"
   },
   {
-    "hex": "#FDDDE6",
-    "name": "Piggy Pink",
-    "rgb": "(253, 221, 230)"
-  },
-  {
     "hex": "#158078",
     "name": "Pine Green",
     "rgb": "(21, 128, 120)"
   },
   {
-    "hex": "#FC74FD",
-    "name": "Pink Flamingo",
-    "rgb": "(252, 116, 253)"
-  },
-  {
-    "hex": "#F78FA7",
-    "name": "Pink Sherbet",
-    "rgb": "(247, 143, 167)"
-  },
-  {
     "hex": "#8E4585",
     "name": "Plum",
     "rgb": "(142, 69, 133)"
-  },
-  {
-    "hex": "#7442C8",
-    "name": "Purple Heart",
-    "rgb": "(116, 66, 200)"
-  },
-  {
-    "hex": "#9D81BA",
-    "name": "Purple Mountain's Majesty",
-    "rgb": "(157, 129, 186)"
-  },
-  {
-    "hex": "#FE4EDA",
-    "name": "Purple Pizzazz",
-    "rgb": "(254, 78, 218)"
   },
   {
     "hex": "#FF496C",
@@ -486,11 +446,6 @@ export const COLORS = [
     "hex": "#FF5349",
     "name": "Red Orange",
     "rgb": "(255, 83, 73)"
-  },
-  {
-    "hex": "#C0448F",
-    "name": "Red Violet",
-    "rgb": "(192, 68, 143)"
   },
   {
     "hex": "#1FCECB",
@@ -538,11 +493,6 @@ export const COLORS = [
     "rgb": "(69, 206, 162)"
   },
   {
-    "hex": "#FB7EFD",
-    "name": "Shocking Pink",
-    "rgb": "(251, 126, 253)"
-  },
-  {
     "hex": "#CDC5C2",
     "name": "Silver",
     "rgb": "(205, 197, 194)"
@@ -583,11 +533,6 @@ export const COLORS = [
     "rgb": "(235, 199, 223)"
   },
   {
-    "hex": "#FC89AC",
-    "name": "Tickle Me Pink",
-    "rgb": "(252, 137, 172)"
-  },
-  {
     "hex": "#DBD7D2",
     "name": "Timberwolf",
     "rgb": "(219, 215, 210)"
@@ -613,11 +558,6 @@ export const COLORS = [
     "rgb": "(255, 255, 102)"
   },
   {
-    "hex": "#926EAE",
-    "name": "Violet (Purple)",
-    "rgb": "(146, 110, 174)"
-  },
-  {
     "hex": "#324AB2",
     "name": "Violet Blue",
     "rgb": "(50, 74, 178)"
@@ -631,11 +571,6 @@ export const COLORS = [
     "hex": "#FFA089",
     "name": "Vivid Tangerine",
     "rgb": "(255, 160, 137)"
-  },
-  {
-    "hex": "#8F509D",
-    "name": "Vivid Violet",
-    "rgb": "(143, 80, 157)"
   },
   {
     "hex": "#FFFFFF",

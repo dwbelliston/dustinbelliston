@@ -70,6 +70,5 @@ export class LandingComponent implements OnInit {
         }
 
         requestAnimationFrame(this.catchColorChange.bind(this))
-
     }
 }
