@@ -53,6 +53,7 @@
   font-weight: 400;
   margin: 0;
   transition: color 2000ms;
+  color: red;
 }
 .sectiontitle {
   @include font-range(25, 50);
