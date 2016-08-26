@@ -52,6 +52,40 @@
   opacity: 0;
   transition: opacity 500ms;
 }
+
+.footer {
+  background: color(accent);
+  min-height: 200px;
+  color: white;
+  margin-top: 50px;
+  padding: 50px 0 25px;
+
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding: 0 25px 25px;
+  }
+  &__link {
+      margin: 0 25px;
+    &:hover img{
+      transform: rotateX(180deg);
+    }
+    img {
+      cursor: pointer;
+      transition: transform 500ms;
+
+    }
+  }
+
+  &__text{
+    text-align: center;
+  }
+  &__headline {
+    font-size: 25px;
+    padding-bottom: 50px;
+  }
+}
 .square {
   height: 10px;
   width: 10px;
