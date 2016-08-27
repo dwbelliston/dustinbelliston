@@ -16,8 +16,10 @@
       </h3>
 
       <p *ngIf="!data.isCanvas">{{data.content}}</p>
-      <canvas *ngIf="data.isCanvas" [id]="canvasId "width="200" height="100" style="border:1px solid #d3d3d3;">
-        {{data.content}}%</canvas>
+      <div *ngIf="data.isCanvas" class="card__canvas">
+        <canvas [id]="canvasId" width="200" height="200">
+          {{data.content}}%</canvas>
+      </div>
 
     </div>
     <div *ngIf="data.viewMore" class="card__viewmore">

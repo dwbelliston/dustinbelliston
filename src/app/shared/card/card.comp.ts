@@ -1,5 +1,5 @@
 import { Component, OnInit, Input,
-  ViewEncapsulation, Renderer, ViewChild } from '@angular/core';
+  ViewEncapsulation, Renderer } from '@angular/core';
 
 @Component({
   selector: 'card',
@@ -14,6 +14,7 @@ export class CardComponent implements OnInit {
   private imageSrc: string;
   private cardId: string;
   private canvasId: string;
+  private context: CanvasRenderingContext2D;
 
   constructor(private renderer : Renderer){
   }
@@ -33,11 +34,13 @@ export class CardComponent implements OnInit {
       this.onScroll(e);
     });
 
-    var canvas = document.getElementById(this.canvasId);
-    //https://jsfiddle.net/nvarun123/yn1bhj2a/4/
-    console.log(canvas)
-    // var ctx = canvas.getContext("2d");
-    // console.log(ctx)
+    // DOCS: http://stackoverflow.com/questions/13669404/typescript-problems-with-type-system
+    // DOCS: http://stackoverflow.com/questions/32115328/type-canvasrenderingcontext2d-webglrenderingcontext-is-not-assignable-to-typ
+    if (this.data.isCanvas) {
+      let canvas = <HTMLCanvasElement> document.getElementById(this.canvasId);
+      this.context = canvas.getContext("2d");
+      this.catchContext(this.context);
+    }
 
   }
 
@@ -53,6 +56,29 @@ export class CardComponent implements OnInit {
     } else {
       elm.style.opacity = '1';
     }
+  }
+
+  catchContext(ctx:CanvasRenderingContext2D) {
+    let PI=Math.PI;
+
+    let percentCalc = Math.abs((this.data.percent/100) * 2);
+    // Get difference if started at 0
+    percentCalc = 2 - percentCalc;
+    // Apply that to the new start point, need to (-) if draw clockwise
+    percentCalc = 1.5 + percentCalc;
+
+    //x, y, radius, start, stop, anti-clockwise
+    ctx.arc(100, 100, 85, 1.5*PI, percentCalc * PI, true);
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 15;
+    ctx.stroke();
+
+    let texter = this.data.percent + '%';
+    ctx.font="50px Monospace";
+    ctx.fillStyle='white';
+    ctx.textAlign='center';
+    ctx.textBaseline='bottom';
+    ctx.fillText(texter, 100, 125, 100);
   }
 
   randomTranslate() {

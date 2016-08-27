@@ -31,40 +31,40 @@ export const CLIENTS = [
 
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
-    color: `#E23137`, url: ``, viewMore: false, isCanvas: true,
+    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '85',
     content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
-    color: `#0078CF`, url: ``, viewMore: false,
-    content: `Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.`
+    color: `#0078CF`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    content: ``
   },
   {name: `css`, img: `tech/css`,
-    color: `#25A8DE`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '90',
+    content: ``
   },
   {name: `python`, img: `tech/python`,
-    color: `#FFD947`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '10',
+    content: ``
   },
   {name: `django`, img: `tech/django`,
-    color: `#06311E`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '50',
+    content: ``
   },
   {name: `aws`, img: `tech/aws`,
-    color: `#f99900`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '75',
+    content: ``
   },
   {name: `jquery`, img: `tech/jquery`,
-    color: `#0466B0`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '50',
+    content: ``
   },
   {name: `firebase`, img: `tech/firebase`,
-    color: `#f88300`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    content: ``
   },
   {name: `postgres`, img: `tech/postgres`,
-    color: `#2f6592`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '70',
+    content: ``
   },
 ];
 

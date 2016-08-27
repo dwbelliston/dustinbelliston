@@ -232,11 +232,15 @@ card {
     transition: opacity 1500ms;
     color: white;
     opacity: 0;
-    overflow: hidden;
+    //overflow: hidden;
     &:after {
      content: '';
       display: block;
     }
+  }
+  &__canvas {
+    display: flex;
+    justify-content: center;
   }
   &__viewmore {
     opacity: 0;
