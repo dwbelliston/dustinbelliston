@@ -31,8 +31,8 @@ export const CLIENTS = [
 
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
-    color: `#E23137`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#E23137`, url: ``, viewMore: false, isCanvas: true,
+    content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
     color: `#0078CF`, url: ``, viewMore: false,
@@ -120,14 +120,14 @@ export const ABOUTME = [
   {name: `tacoma + bike = dream`, img: `aboutme/bike`,
     color: `#96BFF2`, url: ``, viewMore: false,
     content: `Someday. Its going to happen. I love riding bikes, prefer it over driving.
-    My dream is to have a nice mountain bike and throw it in the back of my Tacoma. 
+    My dream is to have a nice mountain bike and throw it in the back of a Tacoma. 
     I need both things.`
   },
   {name: `learning`, img: `aboutme/learning`,
     color: `#C53B34`, url: ``, viewMore: false,
     content: `School of Athens. Raphael 1510. Represents Philosophy. I don't know much about
-    philosophy per se, but I think this image embodies the desire for the human person to
-    expand their knowledge and seek understanding. Learning is cool. I read. Alot.`
+    philosophy, but I think this image embodies the desire people have to
+    expand their knowledge and seek understanding. Learning is cool and I like to read.`
   },
 ];
 

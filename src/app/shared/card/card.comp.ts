@@ -1,5 +1,5 @@
 import { Component, OnInit, Input,
-  ViewEncapsulation, Renderer } from '@angular/core';
+  ViewEncapsulation, Renderer, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'card',
@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   private translateStyle: string;
   private imageSrc: string;
   private cardId: string;
+  private canvasId: string;
 
   constructor(private renderer : Renderer){
   }
@@ -20,6 +21,7 @@ export class CardComponent implements OnInit {
   ngOnInit () {
     if (this.data.img) this.imageSrc = require(`../../../assets/${this.data.img}.png`);
     this.cardId = `${this.data.img}-${Math.random()}`;
+    this.canvasId = `canvas-${this.data.img}-${Math.random()}`;
     this.translateStyle = this.randomTranslate();
   }
 
@@ -30,6 +32,13 @@ export class CardComponent implements OnInit {
     this.renderer.listenGlobal( 'window' , 'scroll' , (e : any) => {
       this.onScroll(e);
     });
+
+    var canvas = document.getElementById(this.canvasId);
+    //https://jsfiddle.net/nvarun123/yn1bhj2a/4/
+    console.log(canvas)
+    // var ctx = canvas.getContext("2d");
+    // console.log(ctx)
+
   }
 
   onScroll(e: any) {

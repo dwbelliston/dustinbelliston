@@ -14,7 +14,11 @@
         <a *ngIf="data.url" [href]="data.url" target="_blank">{{data.name}}</a>
         <span *ngIf="!data.url">{{data.name}}</span>
       </h3>
-      <p>{{data.content}}</p>
+
+      <p *ngIf="!data.isCanvas">{{data.content}}</p>
+      <canvas *ngIf="data.isCanvas" [id]="canvasId "width="200" height="100" style="border:1px solid #d3d3d3;">
+        {{data.content}}%</canvas>
+
     </div>
     <div *ngIf="data.viewMore" class="card__viewmore">
       <img class="" src="../../../assets/glasses.png" alt="View More">
