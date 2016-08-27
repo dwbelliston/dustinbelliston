@@ -13,6 +13,7 @@ export class LandingComponent implements OnInit {
     private s1: any;
     private s2: any;
     private s3: any;
+    private landingJump: any;
 
     private timeCheck: number;
     private timeDelayMS: number;
@@ -33,6 +34,7 @@ export class LandingComponent implements OnInit {
         this.s1 = document.getElementById('s1');
         this.s2 = document.getElementById('s2');
         this.s3 = document.getElementById('s3');
+        this.landingJump = document.getElementById('landingJump');
 
         this.renderer.listenGlobal( 'window' , 'scroll' , (e : any) => {
             this.onScroll(e);
@@ -67,6 +69,7 @@ export class LandingComponent implements OnInit {
             this.s1.style.background = this.randomColor.getRandom();
             this.s2.style.background = this.randomColor.getRandom();
             this.s3.style.background = this.randomColor.getRandom();
+            this.landingJump.style.borderColor = this.randomColor.getRandom();
         }
 
         requestAnimationFrame(this.catchColorChange.bind(this))
