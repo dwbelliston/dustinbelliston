@@ -43,7 +43,7 @@ export const TECH = [
     content: ``
   },
   {name: `python`, img: `tech/python`,
-    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '10',
+    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '60',
     content: ``
   },
   {name: `django`, img: `tech/django`,

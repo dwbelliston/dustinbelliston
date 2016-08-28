@@ -1,40 +1,49 @@
-<nav class="nav" id="nav">
-  <div class="text">
-    <a href="#navers">dustin.belliston</a>
-  </div>
-</nav>
+<div [ngClass]="{toggleAll: showAll}">
+  <nav class="nav" id="nav">
+    <div class="text">
+      <a href="#navers">dustin.belliston</a>
+    </div>
+    <div class="nav__toggle">
+      <span>Show All</span>
+      <div class="switch nav__toggle__switch" >
+        <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+        <label for="cmn-toggle-1" (click)="toggleAll()"></label>
+      </div>
+    </div>
+  </nav>
 
-<landing></landing>
+  <landing></landing>
 
-<h2 class="sectiontitle">portfolio</h2>
+  <h2 class="sectiontitle">portfolio</h2>
 
-<clients id="sec_clients"></clients>
+  <clients id="sec_clients"></clients>
 
-<techs id="sec_techs"></techs>
+  <techs id="sec_techs"></techs>
 
-<education id="sec_education"></education>
+  <education id="sec_education"></education>
 
-<employers id="sec_employers"></employers>
+  <employers id="sec_employers"></employers>
 
-<aboutme id="sec_aboutme"></aboutme>
+  <aboutme id="sec_aboutme"></aboutme>
 
-<footer class="footer">
-   <div class="footer__social">
+  <footer class="footer">
+     <div class="footer__social">
 
-     <a class="footer__link" href="https://github.com/dwbelliston" target="_blank">
-      <img src="../assets/icons/Github.svg" alt="">
-     </a>
-     <a class="footer__link" href="https://www.facebook.com/dustin.belliston" target="_blank">
-      <img src="../assets/icons/Facebook.svg" alt="">
-     </a>
-     <a class="footer__link" href="https://www.linkedin.com/in/dustinbelliston" target="_blank">
-       <img src="../assets/icons/LinkedIN.svg" alt="">
-     </a>
-     <a class="footer__link" href="https://twitter.com/DustinBelliston" target="_blank">
-       <img src="../assets/icons/Twitter.svg" alt="">
-     </a>
+       <a class="footer__link" href="https://github.com/dwbelliston" target="_blank">
+        <img src="../assets/icons/Github.svg" alt="">
+       </a>
+       <a class="footer__link" href="https://www.facebook.com/dustin.belliston" target="_blank">
+        <img src="../assets/icons/Facebook.svg" alt="">
+       </a>
+       <a class="footer__link" href="https://www.linkedin.com/in/dustinbelliston" target="_blank">
+         <img src="../assets/icons/LinkedIN.svg" alt="">
+       </a>
+       <a class="footer__link" href="https://twitter.com/DustinBelliston" target="_blank">
+         <img src="../assets/icons/Twitter.svg" alt="">
+       </a>
 
-   </div>
-  <div class="footer__text footer__headline">Connect with me.</div>
-  <div class="footer__text">dustinbelliston@gmail.com</div>
-</footer>
+     </div>
+    <div class="footer__text footer__headline">Connect with me.</div>
+    <div class="footer__text">dustinbelliston@gmail.com</div>
+  </footer>
+</div>

@@ -12,6 +12,7 @@
     <div class="card__content">
       <h3>
         <a *ngIf="data.url" [href]="data.url" target="_blank">{{data.name}}</a>
+        <img *ngIf="data.isCanvas" class="card__icon" [src]="imageSrc" alt="{{data.name}}">
         <span *ngIf="!data.url">{{data.name}}</span>
       </h3>
 

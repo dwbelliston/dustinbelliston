@@ -2,6 +2,7 @@
 @import "mixins";
 @import "defaults";
 @import "colors";
+@import "toggle";
 
 
 .backToTop {
@@ -92,6 +93,16 @@
   z-index: 500;
   opacity: 0;
   transition: opacity 500ms;
+  display: flex;
+  justify-content: space-between;
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    &__switch {
+      margin-left: 25px;
+    }
+  }
 }
 
 .footer {
@@ -226,6 +237,13 @@ card {
   &:hover  &__viewmore {
     opacity: 1;
     transition: opacity 3000ms;
+  }
+
+  &__icon {
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 
   &__content {

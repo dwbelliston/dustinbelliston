@@ -21,5 +21,10 @@ import { RandomColorService } from './shared/random-color.service'
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
+  private showAll: boolean;
   constructor() {}
+
+  toggleAll() {
+    this.showAll = !this.showAll;
+  }
 }
