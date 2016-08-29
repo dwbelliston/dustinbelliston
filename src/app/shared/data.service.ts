@@ -140,7 +140,7 @@ export const EMPLOYERS = [
 export const ABOUTME = [
   {name: `family`, img: `aboutme/family`,
     color: `#002B39`, url: ``, viewMore: false,
-    content: `It's said Leonidas chose the 300 because of their wives and mothers. 
+    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers. 
     The women would have to be strong when the nation looked to them after the 300 had fallen.
     My wife and the mother of our little girl is cooler than me by far.`
   },
