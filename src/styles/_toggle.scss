@@ -27,10 +27,10 @@
 }
 input.cmn-toggle-round + label {
   padding: 2px;
-  width: 80px;
-  height: 40px;
+  width: 50px;
+  height: 25px;
   background-color: #dddddd;
-  border-radius: 40px;
+  border-radius: 25px;
 }
 input.cmn-toggle-round + label:before,
 input.cmn-toggle-round + label:after {
@@ -44,19 +44,19 @@ input.cmn-toggle-round + label:after {
 input.cmn-toggle-round + label:before {
   right: 1px;
   background-color: #f1f1f1;
-  border-radius: 40px;
+  border-radius: 25px;
   transition: background 0.4s;
 }
 input.cmn-toggle-round + label:after {
-  width: 38px;
+  width: 25px;
   background-color: #fff;
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: margin 0.4s;
 }
 input.cmn-toggle-round:checked + label:before {
-  background-color: #8ce196;
+  background-color: color(primary);
 }
 input.cmn-toggle-round:checked + label:after {
-  margin-left: 40px;
+  margin-left: 23px;
 }
