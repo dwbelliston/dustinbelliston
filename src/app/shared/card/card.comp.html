@@ -16,7 +16,7 @@
         <span *ngIf="!data.url">{{data.name}}</span>
       </h3>
 
-      <p *ngIf="!data.isCanvas">{{data.content}}</p>
+      <p *ngIf="!data.isCanvas" [innerHtml]="data.content"></p>
       <div *ngIf="data.isCanvas" class="card__canvas">
         <canvas [id]="canvasId" width="200" height="200">
           {{data.content}}%</canvas>

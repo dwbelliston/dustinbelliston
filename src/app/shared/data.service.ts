@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 export const CLIENTS = [
   {name: `clientsuccess`, img: `work/logo_clientsuccess`,
-    color: `#1ebaff`, url: `https://www.clientsuccess.com/`, viewMore: true,
+    color: `#1ebaff`, url: `https://www.clientsuccess.com/`, viewMore: false,
     content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
   },
   {name: `simplecitizen`, img: `work/logo_simplecitizen`,
@@ -51,7 +51,7 @@ export const TECH = [
     content: ``
   },
   {name: `aws`, img: `tech/aws`,
-    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '75',
+    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '70',
     content: ``
   },
   {name: `jquery`, img: `tech/jquery`,
@@ -71,42 +71,69 @@ export const TECH = [
 export const EDUCATION = [
   {name: `byu`, img: `education/byu`,
     color: `#01275D`, url: ``, viewMore: false,
-    content: `Masters of Information Systems Management.`
+    content: `
+      Masters Degree<br>
+      Information Systems Management<br>
+    `
   },
   {name: `front-end development`, img: false,
     color: `#246d5a`, url: ``, viewMore: false,
-    content: `Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.`
+    content: `
+      IS 403 - Programming Principles (Java, C#)<br>
+      IS 413 - Enterprise Development (Python)<br>
+      IS 542 - Modern Web (Angular, React, Polymer)<br>
+      IS 537 - Data Structures<br>
+      `
   },
   {name: `back-end development`, img: false,
-    color: `#00BBC6`, url: ``, viewMore: true,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    color: `#00BBC6`, url: ``, viewMore: false,
+    content: `
+      IS 402 - Database Systems (SQL)<br>
+      IS 411 - Systems Design & Implementation (Diagrams)<br>
+      IS 590 - Advanced Database Management (SQL, NoSql) <br>
+    `
   },
   {name: `systems admin`, img: false,
     color: `#F7AE35`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    content: `
+      IS 404 - Data Comm (OSI Model)<br>
+      IS 531 - Enterprise Infrastructure (ITIL, Cloud, Scripting)<br>
+      IS 533 - Advanced Data Comm<br>
+    `
   },
   {name: `business management`, img: false,
     color: `#1D7BCB`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    content: `  
+      BUSM 387 - Economics of Strategy<br>    
+      BUSM 540 - OBHR<br>
+      BUSM 582 - Managerial Ethics<br>
+      MBA 672 - Entrepreneurial Marketing<br>
+      Fundamentals of Finance, Accounting, Marketing, Statistics<br>
+    `
   },
   {name: `security`, img: false,
     color: `#145284`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    content: `
+      IS 414 - Business Processes and Controls<br>    
+      IS 560 - Information Security Management<br>
+    `
   },
 ];
 
 export const EMPLOYERS = [
   {name: `izeni`, img: `employer/izeni`,
     color: `black`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    content: `Worked on web applications for well-funded start-ups. Example client had 2 million in funding. Development
+    in Angular 1 & 2 integrated into Django REST APIs.`
   },
   {name: `fidelity`, img: `employer/fidelity`,
     color: `#398D00`, url: ``, viewMore: false,
-    content: `Takes a user through application process for immigration forms. Think, turbo tax. Generates compelted PDF.`
+    content: `Intern as software developer. Dove into Angular full on. Learned fundamentals of QA and BPMN 2.0.`
   },
   {name: `byu`, img: `employer/byumain`,
     color: `#01275D`, url: ``, viewMore: false,
-    content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
+    content: `Teacher and trainer for religious services. Led 3 hour instruction sessions everyday. Taught fundamentals in 
+    developing relationships of trust, teaching concepts simply, and motivating change through commitments.`
   },
 ];
 
