@@ -271,5 +271,18 @@ card {
   }
 }
 
+.line {
+  margin-top: 0;
+  margin-bottom: 2px;
+
+  &__item {
+    text-decoration: underline;
+  }
+  &__bold {
+    font-weight: 700;
+    font-size: 25px;
+  }
+}
+
 //Last Line
 @import "responsive";

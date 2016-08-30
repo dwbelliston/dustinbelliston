@@ -15,23 +15,23 @@ export const CLIENTS = [
     continue on to customize it. Custom sidenav popout for fitlering. Pinterest styled search input tags.`
   },
   {name: `sol`, img: `work/logo_sol`,
-    color: `#F7AE35`, url: ``, viewMore: false,
+    color: `#F7AE35`, url: `https://sol-staging.izeni.net/application`, viewMore: false,
     content: `Application for healthcare insurance. Angular frontend to collect user information. Django templating to generate
     the PDF.`
   },
   {name: `startstudio`, img: `work/logo_startstudio`,
-    color: `#1D7BCB`, url: ``, viewMore: false,
+    color: `#1D7BCB`, url: `https://www.startstudio.com/`, viewMore: false,
     content: `Marketing site to promote a startup incubator. Simple, yet elegant.`
   },
   {name: `everyname`, img: `work/logo_everyname`,
-    color: `#145284`, url: ``, viewMore: false,
+    color: `#145284`, url: `https://everyname.com/`, viewMore: false,
     content: `Admin site to manage client information and create orders. Lots of models. Lots of fields. Many forms.`
   },
 ];
 
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
-    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '85',
+    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '98',
     content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
@@ -39,19 +39,19 @@ export const TECH = [
     content: ``
   },
   {name: `css`, img: `tech/css`,
-    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '90',
+    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '99',
     content: ``
   },
   {name: `python`, img: `tech/python`,
-    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '75',
     content: ``
   },
   {name: `django`, img: `tech/django`,
-    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '50',
+    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '70',
     content: ``
   },
   {name: `aws`, img: `tech/aws`,
-    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '70',
+    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '80',
     content: ``
   },
   {name: `jquery`, img: `tech/jquery`,
@@ -63,7 +63,7 @@ export const TECH = [
     content: ``
   },
   {name: `postgres`, img: `tech/postgres`,
-    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '70',
+    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '80',
     content: ``
   },
 ];
@@ -72,50 +72,50 @@ export const EDUCATION = [
   {name: `byu`, img: `education/byu`,
     color: `#01275D`, url: ``, viewMore: false,
     content: `
-      Masters Degree<br>
-      Information Systems Management<br>
+      <p class="line"><span class="line__bold">Masters Degree</span></p>
+      Information Systems Management
     `
   },
   {name: `front-end development`, img: false,
     color: `#246d5a`, url: ``, viewMore: false,
     content: `
-      IS 403 - Programming Principles (Java, C#)<br>
-      IS 413 - Enterprise Development (Python)<br>
-      IS 542 - Modern Web (Angular, React, Polymer)<br>
-      IS 537 - Data Structures<br>
+      <p class="line"><span class="line__item">IS 403</span> - Programming Principles (Java, C#)</p>
+      <p class="line"><span class="line__item">IS 413</span> - Enterprise Development (Python)</p>
+      <p class="line"><span class="line__item">IS 542</span> - Modern Web (Angular, React, Polymer)</p>
+      <p class="line"><span class="line__item">IS 537</span> - Data Structures</p>
       `
   },
   {name: `back-end development`, img: false,
     color: `#00BBC6`, url: ``, viewMore: false,
     content: `
-      IS 402 - Database Systems (SQL)<br>
-      IS 411 - Systems Design & Implementation (Diagrams)<br>
-      IS 590 - Advanced Database Management (SQL, NoSql) <br>
+      <p class="line"><span class="line__item">IS 402</span> - Database Systems (SQL)</p>
+      <p class="line"><span class="line__item">IS 411</span> - Systems Design & Implementation (SCRUM, Diagramming)</p>
+      <p class="line"><span class="line__item">IS 590</span> - Advanced Database Management (SQL, NoSql) </p>
     `
   },
   {name: `systems admin`, img: false,
     color: `#F7AE35`, url: ``, viewMore: false,
     content: `
-      IS 404 - Data Comm (OSI Model)<br>
-      IS 531 - Enterprise Infrastructure (ITIL, Cloud, Scripting)<br>
-      IS 533 - Advanced Data Comm<br>
+      <p class="line"><span class="line__item">IS 404</span> - Data Comm (OSI Model, PowerShell)</p>
+      <p class="line"><span class="line__item">IS 531</span> - Enterprise Infrastructure (ITIL, Cloud, Storage, Scripting)</p>
+      <p class="line"><span class="line__item">IS 533</span> - Advanced Data Comm</p>
     `
   },
   {name: `business management`, img: false,
     color: `#1D7BCB`, url: ``, viewMore: false,
     content: `  
-      BUSM 387 - Economics of Strategy<br>    
-      BUSM 540 - OBHR<br>
-      BUSM 582 - Managerial Ethics<br>
-      MBA 672 - Entrepreneurial Marketing<br>
+      <p class="line"><span class="line__item">BUSM 387</span>- Economics of Strategy</p>    
+      <p class="line"><span class="line__item">BUSM 540</span>- OBHR</p>
+      <p class="line"><span class="line__item">BUSM 582</span>- Managerial Ethics</p>
+      <p class="line"><span class="line__item">MBA 672</span>- Entrepreneurial Marketing</p>
       Fundamentals of Finance, Accounting, Marketing, Statistics<br>
     `
   },
   {name: `security`, img: false,
     color: `#145284`, url: ``, viewMore: false,
     content: `
-      IS 414 - Business Processes and Controls<br>    
-      IS 560 - Information Security Management<br>
+      <p class="line"><span class="line__item">IS 414</span> - Business Processes and Controls</p>    
+      <p class="line"><span class="line__item">IS 560</span> - Information Security Management</p>
     `
   },
 ];
