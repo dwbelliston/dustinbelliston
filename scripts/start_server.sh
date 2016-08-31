@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/dustinbelliston
+cd ~
+echo $(date) >> deployed.txt
 #caddy
