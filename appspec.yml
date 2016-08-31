@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: dist
-    destination: /var/www/html
+  - source: /dist
+    destination: /home/ec2-user
 hooks:
   AfterInstall:
 #    - location: scripts/install_dependencies.sh
