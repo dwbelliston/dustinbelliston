@@ -2,6 +2,17 @@
 @import "mixins";
 @import "defaults";
 @import "colors";
+@import "toggle";
+
+
+.backToTop {
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  background: green;
+}
 
 .landing {
   height: 100vh;
@@ -9,6 +20,20 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  &--color {
+    background: color(primary);
+    color: white;
+  }
+
+  &__sub {
+    @include font-range(20, 25);
+    color: color(lgray);
+    text-align: center;
+    font-weight: 400;
+    margin: 0px 0;
+    padding-top: 25px;
+  }
 
   &__hero {
   }
@@ -18,6 +43,39 @@
     justify-content: center;
     padding-bottom: 20px;
   }
+  &__navs {
+    @include font-range(15, 25);
+    color: color(lgray);
+    width: 50%;
+    padding: 25px 50px;
+    text-align: center;
+    border-bottom: solid 2px color(accent);
+    transition: border-bottom 1000ms;
+  }
+
+  &__sections {
+    @include font-range(25, 40);
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    margin-top: 25px;
+
+    &:hover {
+      color: color(lgray);
+    }
+  }
+}
+
+.pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    max-width: 450px;
+    width: 33%;
+  }
 }
 
 .nav {
@@ -26,6 +84,7 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
   color: color(primary);
   top: 0;
+  left: 0;
   width: 100%;
   height: 50px;
   padding: 0 25px;
@@ -34,6 +93,50 @@
   z-index: 500;
   opacity: 0;
   transition: opacity 500ms;
+  display: flex;
+  justify-content: space-between;
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+    &__switch {
+      margin-left: 25px;
+    }
+  }
+}
+
+.footer {
+  background: color(accent);
+  min-height: 200px;
+  color: white;
+  margin-top: 50px;
+  padding: 50px 0 25px;
+
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding: 0 25px 25px;
+  }
+  &__link {
+      margin: 0 25px;
+    &:hover img{
+      transform: rotateX(180deg);
+    }
+    img {
+      cursor: pointer;
+      transition: transform 500ms;
+
+    }
+  }
+
+  &__text{
+    text-align: center;
+  }
+  &__headline {
+    font-size: 25px;
+    padding-bottom: 50px;
+  }
 }
 .square {
   height: 10px;
@@ -136,15 +239,26 @@ card {
     transition: opacity 3000ms;
   }
 
+  &__icon {
+    height: 75px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
   &__content {
     transition: opacity 1500ms;
     color: white;
     opacity: 0;
-    overflow: hidden;
+    //overflow: hidden;
     &:after {
      content: '';
       display: block;
     }
+  }
+  &__canvas {
+    display: flex;
+    justify-content: center;
   }
   &__viewmore {
     opacity: 0;
@@ -154,6 +268,19 @@ card {
     & p {
       margin: 0;
     }
+  }
+}
+
+.line {
+  margin-top: 0;
+  margin-bottom: 2px;
+
+  &__item {
+    text-decoration: underline;
+  }
+  &__bold {
+    font-weight: 700;
+    font-size: 25px;
   }
 }
 

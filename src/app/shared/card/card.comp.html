@@ -12,9 +12,16 @@
     <div class="card__content">
       <h3>
         <a *ngIf="data.url" [href]="data.url" target="_blank">{{data.name}}</a>
+        <img *ngIf="data.isCanvas" class="card__icon" [src]="imageSrc" alt="{{data.name}}">
         <span *ngIf="!data.url">{{data.name}}</span>
       </h3>
-      <p>{{data.content}}</p>
+
+      <p *ngIf="!data.isCanvas" [innerHtml]="data.content"></p>
+      <div *ngIf="data.isCanvas" class="card__canvas">
+        <canvas [id]="canvasId" width="200" height="200">
+          {{data.content}}%</canvas>
+      </div>
+
     </div>
     <div *ngIf="data.viewMore" class="card__viewmore">
       <img class="" src="../../../assets/glasses.png" alt="View More">
