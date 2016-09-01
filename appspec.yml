@@ -8,6 +8,3 @@ hooks:
     - location: scripts/start_server.sh
       timeout: 3000
       runas: root
-  ApplicationStart:
-    - location: scripts/start_server.sh
-      timeout: 3600
