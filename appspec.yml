@@ -5,7 +5,7 @@ files:
     destination: /var/www/html/
 hooks:
   AfterInstall:
-    - location: scripts/start_server
+    - location: scripts/start_server.sh
       timeout: 3000
       runas: root
   ApplicationStart:
