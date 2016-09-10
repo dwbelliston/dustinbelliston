@@ -29,6 +29,13 @@ export const CLIENTS = [
   },
 ];
 
+export const CERTS = [
+  {name: `aws developer`, img: `certs/aws-developer-ac`,
+    color: `#f99900`, url: ``, viewMore: false,
+    content: `associate level`
+  }
+];
+
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
     color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '98',
@@ -103,8 +110,8 @@ export const EDUCATION = [
   },
   {name: `business management`, img: false,
     color: `#1D7BCB`, url: ``, viewMore: false,
-    content: `  
-      <p class="line"><span class="line__item">BUSM 387</span>- Economics of Strategy</p>    
+    content: `
+      <p class="line"><span class="line__item">BUSM 387</span>- Economics of Strategy</p>
       <p class="line"><span class="line__item">BUSM 540</span>- OBHR</p>
       <p class="line"><span class="line__item">BUSM 582</span>- Managerial Ethics</p>
       <p class="line"><span class="line__item">MBA 672</span>- Entrepreneurial Marketing</p>
@@ -114,7 +121,7 @@ export const EDUCATION = [
   {name: `security`, img: false,
     color: `#145284`, url: ``, viewMore: false,
     content: `
-      <p class="line"><span class="line__item">IS 414</span> - Business Processes and Controls</p>    
+      <p class="line"><span class="line__item">IS 414</span> - Business Processes and Controls</p>
       <p class="line"><span class="line__item">IS 560</span> - Information Security Management</p>
     `
   },
@@ -132,7 +139,7 @@ export const EMPLOYERS = [
   },
   {name: `byu`, img: `employer/byumain`,
     color: `#01275D`, url: ``, viewMore: false,
-    content: `Teacher and trainer for religious services. Led 3 hour instruction sessions everyday. Taught fundamentals in 
+    content: `Teacher and trainer for religious services. Led 3 hour instruction sessions everyday. Taught fundamentals in
     developing relationships of trust, teaching concepts simply, and motivating change through commitments.`
   },
 ];
@@ -140,14 +147,14 @@ export const EMPLOYERS = [
 export const ABOUTME = [
   {name: `family`, img: `aboutme/family`,
     color: `#002B39`, url: ``, viewMore: false,
-    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers. 
+    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers.
     The women would have to be strong when the nation looked to them after the 300 had fallen.
     My wife and the mother of our little girl is cooler than me by far.`
   },
   {name: `tacoma + bike = dream`, img: `aboutme/bike`,
     color: `#96BFF2`, url: ``, viewMore: false,
     content: `Someday. Its going to happen. I love riding bikes, prefer it over driving.
-    My dream is to have a nice mountain bike and throw it in the back of a Tacoma. 
+    My dream is to have a nice mountain bike and throw it in the back of a Tacoma.
     I need both things.`
   },
   {name: `learning`, img: `aboutme/learning`,
@@ -169,6 +176,9 @@ export class DataService {
   }
   getTech() {
     return TECH;
+  }
+  getCerts() {
+    return CERTS;
   }
   getEducation() {
     return EDUCATION;
