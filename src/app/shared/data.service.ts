@@ -38,7 +38,7 @@ export const CERTS = [
 
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
-    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '100',
+    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '99',
     content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
@@ -46,7 +46,7 @@ export const TECH = [
     content: ``
   },
   {name: `css`, img: `tech/css`,
-    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '100',
+    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '99',
     content: ``
   },
   {name: `python`, img: `tech/python`,
