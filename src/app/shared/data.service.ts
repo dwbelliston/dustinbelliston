@@ -38,7 +38,7 @@ export const CERTS = [
 
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
-    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '98',
+    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '100',
     content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
@@ -46,11 +46,11 @@ export const TECH = [
     content: ``
   },
   {name: `css`, img: `tech/css`,
-    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '99',
+    color: `#25A8DE`, url: ``, viewMore: false, isCanvas: true, percent: '100',
     content: ``
   },
   {name: `python`, img: `tech/python`,
-    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '75',
+    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '80',
     content: ``
   },
   {name: `django`, img: `tech/django`,
@@ -58,15 +58,15 @@ export const TECH = [
     content: ``
   },
   {name: `aws`, img: `tech/aws`,
-    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '80',
+    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '90',
     content: ``
   },
   {name: `jquery`, img: `tech/jquery`,
-    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '50',
+    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '75',
     content: ``
   },
   {name: `firebase`, img: `tech/firebase`,
-    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '80',
     content: ``
   },
   {name: `postgres`, img: `tech/postgres`,
