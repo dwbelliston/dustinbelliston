@@ -80,7 +80,8 @@ export const EDUCATION = [
     color: `#01275D`, url: ``, viewMore: false,
     content: `
       <p class="line"><span class="line__bold">Masters Degree</span></p>
-      Information Systems Management
+      <p class="line">Information Systems Management</p>
+      <p class="line">Graduation: April 2017</p>
     `
   },
   {name: `front-end development`, img: false,
