@@ -6,8 +6,6 @@ import { DataService } from '../shared/data.service'
     selector: 'clients',
     template: require('./clients.comp.html'),
     styles: [require('./clients.comp.scss'), require('../../styles/main.scss')],
-    directives: [],
-    providers: [DataService],
 })
 export class ClientsComponent implements OnInit {
     private clients: any;

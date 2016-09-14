@@ -6,8 +6,6 @@ import { DataService } from '../shared/data.service'
     selector: 'aboutme',
     template: require('./aboutme.comp.html'),
     styles: [require('./aboutme.comp.scss'), require('../../styles/main.scss')],
-    directives: [],
-    providers: [DataService],
 })
 export class AboutmeComponent implements OnInit {
     private aboutme: any;

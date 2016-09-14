@@ -6,8 +6,6 @@ import { DataService } from '../shared/data.service'
     selector: 'techs',
     template: require('./tech.comp.html'),
     styles: [require('./tech.comp.scss'), require('../../styles/main.scss')],
-    directives: [],
-    providers: [DataService],
 })
 export class TechsComponent implements OnInit {
     private techs: any;

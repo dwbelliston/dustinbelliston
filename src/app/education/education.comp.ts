@@ -6,8 +6,6 @@ import { DataService } from '../shared/data.service'
     selector: 'education',
     template: require('./education.comp.html'),
     styles: [require('./education.comp.scss'), require('../../styles/main.scss')],
-    directives: [],
-    providers: [DataService],
 })
 export class EducationComponent implements OnInit {
     private education: any;

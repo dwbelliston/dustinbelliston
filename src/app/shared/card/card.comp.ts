@@ -5,7 +5,6 @@ import { Component, OnInit, Input,
   selector: 'card',
   template: require('./card.comp.html'),
   styles: [require('../../../styles/main.scss'), require('./card.comp.scss')],
-  providers: [],
   encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent implements OnInit {
