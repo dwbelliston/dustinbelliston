@@ -7,12 +7,12 @@ export const CLIENTS = [
   },
   {name: `simplecitizen`, img: `work/logo_simplecitizen`,
     color: `#246d5a`, url: `https://simplecitizen.com/`, viewMore: false,
-    content: `Takes a user through application process for immigration forms. Think, turbo tax. Generates completed PDF.`
+    content: `Takes a user through application process for immigration forms. Think, TurboTax. Generates completed PDF.`
   },
   {name: `sendoutcards`, img: `work/logo_soc`,
     color: `#00BBC6`, url: `https://www.sendoutcards.com/catalog/`, viewMore: false,
-    content: `Worked on a grid that showed the cards, pinterest style, and the user could select it, view it and then
-    continue on to customize it. Custom sidenav popout for fitlering. Pinterest styled search input tags.`
+    content: `Pinterest style grid of greeting cards. User can select card, view it and then
+    continue on to customize it. Created a custom sidenav popout for filtering.`
   },
   {name: `sol`, img: `work/logo_sol`,
     color: `#F7AE35`, url: `https://sol-staging.izeni.net/application`, viewMore: false,
@@ -31,6 +31,10 @@ export const CLIENTS = [
 
 export const CERTS = [
   {name: `aws developer`, img: `certs/aws-developer-ac`,
+    color: `#f99900`, url: ``, viewMore: false,
+    content: `associate level`
+  },
+  {name: `aws solutions architect`, img: `certs/aws-solutions-ac`,
     color: `#f99900`, url: ``, viewMore: false,
     content: `associate level`
   }
@@ -131,12 +135,11 @@ export const EDUCATION = [
 export const EMPLOYERS = [
   {name: `izeni`, img: `employer/izeni`,
     color: `black`, url: ``, viewMore: false,
-    content: `Worked on web applications for well-funded start-ups. Example client had 2 million in funding. Development
-    in Angular 1 & 2 integrated into Django REST APIs.`
+    content: `Full stack developer on web applications for well-funded start-ups. Development in Angular integrated into Django REST APIs.`
   },
   {name: `fidelity`, img: `employer/fidelity`,
     color: `#398D00`, url: ``, viewMore: false,
-    content: `Intern as software developer. Dove into Angular full on. Learned fundamentals of QA and BPMN 2.0.`
+    content: `Software developer itern. Built a web application to assist in QA processes. Learned fundamentals of QA and BPMN 2.0.`
   },
   {name: `byu`, img: `employer/byumain`,
     color: `#01275D`, url: ``, viewMore: false,
@@ -148,21 +151,15 @@ export const EMPLOYERS = [
 export const ABOUTME = [
   {name: `family`, img: `aboutme/family`,
     color: `#002B39`, url: ``, viewMore: false,
-    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers.
-    The women would have to be strong when the nation looked to them after the 300 had fallen.
-    My wife and the mother of our little girl is cooler than me by far.`
+    content: `It’s said that Leonidas, King of Sparta, chose his 300 warriors because of their wives and mothers. The women would have to be strong when the nation looked to them after the warriors had fallen. I’m married to a woman with Spartan-like strength, and we welcomed our daughter into our family in June 2016. `
   },
   {name: `tacoma + bike = dream`, img: `aboutme/bike`,
     color: `#96BFF2`, url: ``, viewMore: false,
-    content: `Someday. Its going to happen. I love riding bikes, prefer it over driving.
-    My dream is to have a nice mountain bike and throw it in the back of a Tacoma.
-    I need both things.`
+    content: `I love riding bikes and I prefer biking over driving. My dream is to own an nice mountain bike and a Toyota Tacoma so I can throw my bike in the back of my truck and head to the mountains. `
   },
   {name: `learning`, img: `aboutme/learning`,
     color: `#C53B34`, url: ``, viewMore: false,
-    content: `School of Athens. Raphael 1510. Represents Philosophy. I don't know much about
-    philosophy, but I think this image embodies the desire people have to
-    expand their knowledge and seek understanding. Learning is cool and I like to read.`
+    content: `When I’m not programming, you can usually find me reading a book, listening to a podcast, or researching something online. Learning goes beyond formal education and I believe it’s important to always seek greater knowledge and understanding.`
   },
 ];
 
