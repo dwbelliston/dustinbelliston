@@ -47,11 +47,20 @@
 /* Landscape phone to portrait tablet
 ----------------------------------------*/
 @media (max-width: 768px) {
+  .nav__toggle__text {
+    display: none;
+  }
+
+  .landing__link {
+    margin-top: 0;
+  }
 }
 
 
 /* Landscape phones and down
 ----------------------------------------*/
 @media (max-width: 400px) {
-
+  .landing__link {
+    margin-top: 25px;
+  }
 }
