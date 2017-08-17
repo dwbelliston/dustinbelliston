@@ -155,7 +155,7 @@ export const ABOUTME = [
   },
   {name: `tacoma + bike = dream`, img: `aboutme/bike`,
     color: `#96BFF2`, url: ``, viewMore: false,
-    content: `I love riding bikes and I prefer biking over driving. My dream is to own an nice mountain bike and a Toyota Tacoma so I can throw my bike in the back of my truck and head to the mountains. `
+    content: `I love riding bikes and I prefer biking over driving. My dream is to own a nice mountain bike and a Toyota Tacoma so I can throw my bike in the back of my truck and head to the mountains. `
   },
   {name: `learning`, img: `aboutme/learning`,
     color: `#C53B34`, url: ``, viewMore: false,
