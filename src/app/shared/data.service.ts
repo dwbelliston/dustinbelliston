@@ -1,6 +1,18 @@
 import { Injectable } from '@angular/core';
 
 export const CLIENTS = [
+  {name: `benefitsculptor`, img: `work/logo_benefit`,
+    color: `#ff7d00`, url: `https://benefitsculptor.com/`, viewMore: false,
+    content: `Worked closely with founder to build a platform for quoting small group insurance.`
+  },
+  {name: `ancestry`, img: `work/logo_ancestry`,
+    color: `#9cbe30`, url: `https://www.ancestry.com/`, viewMore: false,
+    content: `Helped with their migration to cloud as an AWS consultant. Short engagement.`
+  },
+  {name: `1strategy`, img: `work/logo_one`,
+    color: `#2ebfeb`, url: `http://www.1strategy.com/`, viewMore: false,
+    content: `Have worked with this team a bit.`
+  },
   {name: `clientsuccess`, img: `work/logo_clientsuccess`,
     color: `#1ebaff`, url: `https://www.clientsuccess.com/`, viewMore: false,
     content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
@@ -46,7 +58,7 @@ export const TECH = [
     content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
-    color: `#0078CF`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    color: `#0078CF`, url: ``, viewMore: false, isCanvas: true, percent: '95',
     content: ``
   },
   {name: `css`, img: `tech/css`,
@@ -54,27 +66,31 @@ export const TECH = [
     content: ``
   },
   {name: `python`, img: `tech/python`,
-    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '80',
+    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '89',
     content: ``
   },
   {name: `django`, img: `tech/django`,
-    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '70',
+    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '89',
     content: ``
   },
   {name: `aws`, img: `tech/aws`,
-    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '90',
+    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '98',
     content: ``
   },
   {name: `jquery`, img: `tech/jquery`,
-    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '75',
+    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '73',
     content: ``
   },
   {name: `firebase`, img: `tech/firebase`,
-    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '80',
+    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '84',
     content: ``
   },
   {name: `postgres`, img: `tech/postgres`,
-    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '80',
+    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '92',
+    content: ``
+  },
+  {name: `terraform`, img: `tech/terraform`,
+    color: `#5c4ee5`, url: ``, viewMore: false, isCanvas: true, percent: '70',
     content: ``
   },
 ];
@@ -133,9 +149,22 @@ export const EDUCATION = [
 ];
 
 export const EMPLOYERS = [
+  {name: `capital one`, img: `employer/capitalone`,
+    color: `#d12e32`, url: `https://www.capitalone.com/`, viewMore: false,
+    content: `Continuing to do frontend work (angular, redux). More AWS. I am a Code 'Chauffeur'. CI/CD. Jenkins.`
+  },
+  {name: `currentclient`, img: `employer/currentclient`,
+    color: `#ff7d00`, url: `https://currentclient.com/`, viewMore: false,
+    content: `First go with a startup. Led the development of a webapp that is a mashup of Qualtrics, Mailchimp, and a tiny CRM. Working with Beta customers. Still churning.`
+  },
+  {name: `1099`, img: `employer/1099`,
+    color: `#f1c40f`, url: ``, viewMore: false,
+    content: `For hire! When I have capacity, I am always excited about a fresh project. Happy to talk.`
+  },
   {name: `izeni`, img: `employer/izeni`,
-    color: `black`, url: ``, viewMore: false,
-    content: `Full stack developer on web applications for well-funded start-ups. Development in Angular integrated into Django REST APIs.`
+    color: `#0167f7`, url: `https://startstudio.com/`, viewMore: false,
+    content: `Worked on web applications for well-funded start-ups. Example client had 2 million in funding. Development
+    in Angular 1 & 2 integrated into Django REST APIs.`
   },
   {name: `fidelity`, img: `employer/fidelity`,
     color: `#398D00`, url: ``, viewMore: false,
@@ -151,11 +180,15 @@ export const EMPLOYERS = [
 export const ABOUTME = [
   {name: `family`, img: `aboutme/family`,
     color: `#002B39`, url: ``, viewMore: false,
-    content: `It’s said that Leonidas, King of Sparta, chose his 300 warriors because of their wives and mothers. The women would have to be strong when the nation looked to them after the warriors had fallen. I’m married to a woman with Spartan-like strength, and we welcomed our daughter into our family in June 2016. `
+    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers.
+    The women would have to be strong when the nation looked to them after the 300 had fallen.
+    My wife and the mother of our little girl is cooler than me by far.`
   },
   {name: `tacoma + bike = dream`, img: `aboutme/bike`,
     color: `#96BFF2`, url: ``, viewMore: false,
-    content: `I love riding bikes and I prefer biking over driving. My dream is to own a nice mountain bike and a Toyota Tacoma so I can throw my bike in the back of my truck and head to the mountains. `
+    content: `Someday. Its going to happen. I love riding bikes, prefer it over driving.
+    My dream is to have a nice mountain bike and throw it in the back of a Tacoma.
+    I need both things.`
   },
   {name: `learning`, img: `aboutme/learning`,
     color: `#C53B34`, url: ``, viewMore: false,
