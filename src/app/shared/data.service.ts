@@ -1,6 +1,18 @@
 import { Injectable } from '@angular/core';
 
 export const CLIENTS = [
+  {name: `benefitsculptor`, img: `work/logo_benefit`,
+    color: `#ff7d00`, url: `https://benefitsculptor.com/`, viewMore: false,
+    content: `Worked closely with founder to build a platform for quoting small group insurance.`
+  },
+  {name: `ancestry`, img: `work/logo_ancestry`,
+    color: `#9cbe30`, url: `https://www.ancestry.com/`, viewMore: false,
+    content: `Helped with their migration to cloud as an AWS consultant. Short engagement.`
+  },
+  {name: `1strategy`, img: `work/logo_one`,
+    color: `#2ebfeb`, url: `http://www.1strategy.com/`, viewMore: false,
+    content: `Have worked with this team a bit.`
+  },
   {name: `clientsuccess`, img: `work/logo_clientsuccess`,
     color: `#1ebaff`, url: `https://www.clientsuccess.com/`, viewMore: false,
     content: `Interactive grid that displays a company’s clients and information about them. Custom filtering and action items.`
@@ -31,11 +43,11 @@ export const CLIENTS = [
 
 export const TECH = [
   {name: `angular`, img: `tech/angular`,
-    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '98',
+    color: `#E23137`, url: ``, viewMore: false, isCanvas: true, percent: '99',
     content: `80`
   },
   {name: `typescript`, img: `tech/typescript`,
-    color: `#0078CF`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    color: `#0078CF`, url: ``, viewMore: false, isCanvas: true, percent: '95',
     content: ``
   },
   {name: `css`, img: `tech/css`,
@@ -43,27 +55,31 @@ export const TECH = [
     content: ``
   },
   {name: `python`, img: `tech/python`,
-    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '75',
+    color: `#FFD947`, url: ``, viewMore: false, isCanvas: true, percent: '89',
     content: ``
   },
   {name: `django`, img: `tech/django`,
-    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '70',
+    color: `#06311E`, url: ``, viewMore: false, isCanvas: true, percent: '89',
     content: ``
   },
   {name: `aws`, img: `tech/aws`,
-    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '80',
+    color: `#f99900`, url: ``, viewMore: false, isCanvas: true, percent: '98',
     content: ``
   },
   {name: `jquery`, img: `tech/jquery`,
-    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '50',
+    color: `#0466B0`, url: ``, viewMore: false, isCanvas: true, percent: '73',
     content: ``
   },
   {name: `firebase`, img: `tech/firebase`,
-    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '60',
+    color: `#f88300`, url: ``, viewMore: false, isCanvas: true, percent: '84',
     content: ``
   },
   {name: `postgres`, img: `tech/postgres`,
-    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '80',
+    color: `#2f6592`, url: ``, viewMore: false, isCanvas: true, percent: '92',
+    content: ``
+  },
+  {name: `terraform`, img: `tech/terraform`,
+    color: `#5c4ee5`, url: ``, viewMore: false, isCanvas: true, percent: '70',
     content: ``
   },
 ];
@@ -103,8 +119,8 @@ export const EDUCATION = [
   },
   {name: `business management`, img: false,
     color: `#1D7BCB`, url: ``, viewMore: false,
-    content: `  
-      <p class="line"><span class="line__item">BUSM 387</span>- Economics of Strategy</p>    
+    content: `
+      <p class="line"><span class="line__item">BUSM 387</span>- Economics of Strategy</p>
       <p class="line"><span class="line__item">BUSM 540</span>- OBHR</p>
       <p class="line"><span class="line__item">BUSM 582</span>- Managerial Ethics</p>
       <p class="line"><span class="line__item">MBA 672</span>- Entrepreneurial Marketing</p>
@@ -114,15 +130,27 @@ export const EDUCATION = [
   {name: `security`, img: false,
     color: `#145284`, url: ``, viewMore: false,
     content: `
-      <p class="line"><span class="line__item">IS 414</span> - Business Processes and Controls</p>    
+      <p class="line"><span class="line__item">IS 414</span> - Business Processes and Controls</p>
       <p class="line"><span class="line__item">IS 560</span> - Information Security Management</p>
     `
   },
 ];
 
 export const EMPLOYERS = [
+  {name: `capital one`, img: `employer/capitalone`,
+    color: `#d12e32`, url: `https://www.capitalone.com/`, viewMore: false,
+    content: `Continuing to do frontend work (angular, redux). More AWS. I am a Code 'Chauffeur'. CI/CD. Jenkins.`
+  },
+  {name: `currentclient`, img: `employer/currentclient`,
+    color: `#ff7d00`, url: `https://currentclient.com/`, viewMore: false,
+    content: `First go with a startup. Led the development of a webapp that is a mashup of Qualtrics, Mailchimp, and a tiny CRM. Working with Beta customers. Still churning.`
+  },
+  {name: `1099`, img: `employer/1099`,
+    color: `#f1c40f`, url: ``, viewMore: false,
+    content: `For hire! When I have capacity, I am always excited about a fresh project. Happy to talk.`
+  },
   {name: `izeni`, img: `employer/izeni`,
-    color: `black`, url: ``, viewMore: false,
+    color: `#0167f7`, url: `https://startstudio.com/`, viewMore: false,
     content: `Worked on web applications for well-funded start-ups. Example client had 2 million in funding. Development
     in Angular 1 & 2 integrated into Django REST APIs.`
   },
@@ -132,7 +160,7 @@ export const EMPLOYERS = [
   },
   {name: `byu`, img: `employer/byumain`,
     color: `#01275D`, url: ``, viewMore: false,
-    content: `Teacher and trainer for religious services. Led 3 hour instruction sessions everyday. Taught fundamentals in 
+    content: `Teacher and trainer for religious services. Led 3 hour instruction sessions everyday. Taught fundamentals in
     developing relationships of trust, teaching concepts simply, and motivating change through commitments.`
   },
 ];
@@ -140,14 +168,14 @@ export const EMPLOYERS = [
 export const ABOUTME = [
   {name: `family`, img: `aboutme/family`,
     color: `#002B39`, url: ``, viewMore: false,
-    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers. 
+    content: `It's said Leonidas chose the 300 Spartans because of their wives and mothers.
     The women would have to be strong when the nation looked to them after the 300 had fallen.
     My wife and the mother of our little girl is cooler than me by far.`
   },
   {name: `tacoma + bike = dream`, img: `aboutme/bike`,
     color: `#96BFF2`, url: ``, viewMore: false,
     content: `Someday. Its going to happen. I love riding bikes, prefer it over driving.
-    My dream is to have a nice mountain bike and throw it in the back of a Tacoma. 
+    My dream is to have a nice mountain bike and throw it in the back of a Tacoma.
     I need both things.`
   },
   {name: `learning`, img: `aboutme/learning`,
