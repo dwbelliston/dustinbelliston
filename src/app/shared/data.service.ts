@@ -42,6 +42,10 @@ export const CLIENTS = [
 ];
 
 export const CERTS = [
+  {name: `aws sa pro`, img: `certs/aws-sa-pro`,
+    color: `#f99900`, url: ``, viewMore: false,
+    content: `professional level`
+  },
   {name: `aws developer`, img: `certs/aws-developer-ac`,
     color: `#f99900`, url: ``, viewMore: false,
     content: `associate level`
